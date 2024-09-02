@@ -21,4 +21,7 @@ $(document).ready(function() {
         repos.text(json.public_repos);
         link.attr('href', json.html_url); //método attr() do jQuery para definir o atributo href do link.
     })
+    .catch(function(erro) {
+        alert("Ocorreu um erro ao buscar os dados, tente novamente mais tarde.")
+    })
 })
